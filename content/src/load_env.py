@@ -4,9 +4,11 @@ import json
 import pandas as pd
 from concurrent.futures import ProcessPoolExecutor
 from tqdm import tqdm
+import os
 
 ###########################################
-with open('EXPORT_2023/D_companies_new.json', 'r') as f:
+current_directory = os.path.dirname(os.path.abspath(__file__))
+with open(f"{current_directory}/EXPORT_2023/D_companies_new.json", 'r') as f:
     D_companies = json.load(f)
 
 D_companies_rev = {}
