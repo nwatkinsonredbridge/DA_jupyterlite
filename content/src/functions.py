@@ -23,7 +23,7 @@ def set_global_driver(dr):
     driver = dr
 
 def get_dfile(company_name):
-    dire_raw = f"{current_directory}/EXPORT_2023/RAW_CLEANUP/{company_name}/*/reports/"
+    dire_raw = f"{current_directory}/../EXPORT_2023/RAW_CLEANUP/{company_name}/*/reports/"
     g = glob.glob(dire_raw + "*.xhtml")
     if len(g) == 0:
         g = glob.glob(dire_raw+ "*.html")

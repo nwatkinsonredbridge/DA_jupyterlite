@@ -207,7 +207,7 @@ def prepare_widget():
 # SUGGESTIONS 
 
 current_directory = os.path.dirname(os.path.abspath(__file__))
-df_ref = pd.read_excel(f"{current_directory}/../EXPORT_2023/COMPANY_REFERENCES.xlsx")
+df_ref = pd.read_excel(f"{current_directory}/EXPORT_2023/COMPANY_REFERENCES.xlsx")
 d = glob(f"{current_directory}/../EXPORT_2023/RAW_CLEANUP/*/")
 L_companies = [dd.split("/")[-2] for dd in d]
 threshold = 80
